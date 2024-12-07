@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="shortcut icon" href="cloudy.png" type="image/x-icon">
+</head>
+<body>
+    <div id="background">
+        <div id="image"></div>
+    </div>
+    
+    <div class="weather-widget">
+        <div id="background-image"></div>
+        <div class="overlay">
+            <div class="location-info">
+                <select id="cities">
+                    <option value="48.856613,2.352222">Paris</option>
+                    <option value="31.230391,121.473701">Shanghai</option>
+                    <option value="40.741895,-73.989308">New York</option>
+                    <option value="33.5945144,-7.6200284">Casablanca</option>
+                    <option value="30.4278,-9.5981">Agadir</option>
+                </select>
+            </div>
+            <div class="weather-info">
+                <h1 id="temp"></h1>
+                <img width="50px" id="icon" src="">
+            </div>
+            <div class="forecast-info">
+                <h2>Prévisions des prochains jours</h2>
+                <div id="forecast"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
